@@ -1,0 +1,24 @@
+<div class="container col-6 ">
+  <h1 class="text-center mt-5">Login Form</h1>
+  <br>
+  <!-- <hr> -->
+  <form action="" class="container bg-info bg-gradient px-4 py-4 rounded">
+
+    <label class="form-label fs-4">Username</label>
+    <input type="text" placeholder="Username" class="form-control lh-sm rounded" required>
+    <label class="form-label fs-4"> Password*</label>
+    <input type="password" placeholder="Password" class="form-control lh-sm rounded" minlength="8" required
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+    *Please use at least one number, and one uppercase and lowercase letter:
+    <br><br>
+    <button class="btn btn-primary col-12 fs-5 login rounded" onclick="myclick()">Login</button><br>
+    <br>
+    <div class="form-check">
+      <input type="checkbox" value="" class="form-check-input" id="flexcheckdefault">
+      <label for="flexcheckdefault" class="form-check-label pb-1"> Remembe me </label>
+      <!-- <input type="button" value="Cancel" class="btn btn-primary mx-2"> -->
+      <a href="https://www.google.com" target="_blank" class="float-end">Forget Password ?</a>
+    </div>
+
+  </form>
+</div>
