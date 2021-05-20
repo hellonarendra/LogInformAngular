@@ -1,50 +1,44 @@
-<div class="container col-6 ">
+<div class="container col-5 ">
   <h1 class="text-center mt-5">Sign Up Now</h1>
-  <br>
-  <!-- <hr> -->
   <form action="" class="container bg-info bg-gradient px-4 py-4 rounded">
 
     <div class="col-6 float-start">
-      <p><label class="form-label fs-5 " required="">First Name*:</label><br>
-        <input type="text" placeholder="First Name" class="lh-sm col-11 rounded" required></p>
+      <label class="form-label fs-5 mb-0 ">First Name*:</label>
+      <input type="text" placeholder="First Name" class="lh-sm col-11 rounded " required>
     </div>
 
     <div class="col-6 float-end">
-      <p><label class="form-label fs-5 "> Last Name: </label><br>
-        <input type="text" class="lh-sm col-11 rounded" placeholder="Last Name"></p>
+      <label class="form-label fs-5 ps-4  mb-0 "> Last Name: </label>
+      <input type="text" class="lh-sm col-11 rounded float-end " placeholder="Last Name">
     </div>
-
 
     <div class="col-6 float-start">
-      <p><label class="form-label fs-5" for="email">Email*:</label>
-        <input class="lh-sm col-11 rounded" type=" email" id="email" placeholder="Enter your Email" required>
-      </p>
+      <label class="form-label fs-5 float-start  mb-0 mt-2" for="email">Email*:</label>
+      <input class="lh-sm col-11 rounded float-start" type=" email" id="email" placeholder="Enter your Email" required>
     </div>
 
     <div class="col-6 float-end">
-      <p><label class="form-label fs-5">Mobile No.*</label>
-        <input type="tel" class="lh-sm col-11 rounded" placeholder="Mobile No."></p>
+      <label class="form-label fs-5 ps-4  mb-0 mt-2">Mobile No.*</label>
+      <input type="tel" class="lh-sm col-11 rounded float-end" placeholder="Mobile No.">
     </div>
-
 
     <div class="col-6 float-start">
-      <p><label class="form-label fs-5"> Password*</label><br>
-        <input type="password" placeholder="Password" class=" lh-sm col-11 rounded" minlength="8" required
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></p>
+      <label class="form-label fs-5  mb-0 mt-2"> Password*</label>
+      <input type="password" placeholder="Password" class=" lh-sm col-11 rounded " minlength="8" required
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
     </div>
 
     <div class="col-6 float-end">
-      <p> <label class="form-label fs-5">Re-enter Password:</label><br>
-        <input type="password" placeholder="Confirm Password" class=" lh-sm col-11 rounded" minlength="8" required
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></p>
-
+      <label class="form-label fs-5 d-flex-md ps-4  mb-0 mt-2">Re-enter Password:</label>
+      <input type="password" placeholder="Confirm Password" class=" float-end lh-sm col-11 rounded " minlength="8"
+        required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
     </div>
 
-    <p class="float-start">*Enter at least one number and one Uppercase and Lowercase letter</p>
+    <p class="float-start mt-2">*Enter at least one number and one Uppercase and Lowercase letter</p>
+    <button class="btn btn-primary col-12 fs-5 rounded">Sign Up</button>
+    <div class="text-center mt-2 ">
+      <p>Already a member <a href="../login/login.component.html" target="_blank">Login</a></p>
+    </div>
 
-    <br>
-    <button class="btn btn-primary col-12 fs-5 rounded">Sign Up</button><br>
-
-    <br>
   </form>
 </div>

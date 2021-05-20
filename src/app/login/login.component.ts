@@ -1,3 +1,4 @@
+import { CompileShallowModuleMetadata } from "@angular/compiler";
 import { Component, OnInit } from "@angular/core";
 
 @Component({
@@ -9,7 +10,8 @@ export class LoginComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-}
-function myclick() {
-  prompt("You have sigend in successfully");
+  myclick() {
+    alert("You have sigend in successfully");
+    // console.log("You have sigend in successfully");
+  }
 }
