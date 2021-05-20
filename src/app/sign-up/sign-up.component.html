@@ -1,41 +1,41 @@
-<div class="container col-5 ">
-  <h1 class="text-center mt-5">Sign Up Now</h1>
-  <form action="" class="container bg-info bg-gradient px-4 py-4 rounded">
+<div class="container col-8 ">
+  <h3 class="text-center mt-5 mb-4">Sign Up Now</h3>
+  <form action="" class="row bg-info bg-gradient px-4 py-4 rounded">
 
-    <div class="col-6 float-start">
-      <label class="form-label fs-5 mb-0 ">First Name*:</label>
-      <input type="text" placeholder="First Name" class="lh-sm col-11 rounded " required>
+    <div class="col-md-6">
+      <label for="firstname" class="form-label mb-0 mt-2">First Name</label>
+      <input type="text" class="form-control rounded lh-sm" id="firstname" placeholder="First Name" required>
     </div>
 
-    <div class="col-6 float-end">
-      <label class="form-label fs-5 ps-4  mb-0 "> Last Name: </label>
-      <input type="text" class="lh-sm col-11 rounded float-end " placeholder="Last Name">
+    <div class="col-md-6">
+      <label for="lastname" class="form-label mb-0 mt-2">Last Name</label>
+      <input type="text" class="form-control rounded lh-sm" id="lastname" placeholder="Last Name">
     </div>
 
-    <div class="col-6 float-start">
-      <label class="form-label fs-5 float-start  mb-0 mt-2" for="email">Email*:</label>
-      <input class="lh-sm col-11 rounded float-start" type=" email" id="email" placeholder="Enter your Email" required>
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label mb-0 mt-2">Email</label>
+      <input type="email" class="form-control rounded lh-sm" id="inputEmail4" placeholder="Email" required>
     </div>
 
-    <div class="col-6 float-end">
-      <label class="form-label fs-5 ps-4  mb-0 mt-2">Mobile No.*</label>
-      <input type="tel" class="lh-sm col-11 rounded float-end" placeholder="Mobile No.">
+    <div class="col-md-6">
+      <label for="mobile" class="form-label mb-0 mt-2">Mobile No.</label>
+      <input type="tel" class="form-control rounded lh-sm" id="mobile" placeholder="Mobile No.">
     </div>
 
-    <div class="col-6 float-start">
-      <label class="form-label fs-5  mb-0 mt-2"> Password*</label>
-      <input type="password" placeholder="Password" class=" lh-sm col-11 rounded " minlength="8" required
-        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+    <div class="col-md-6">
+      <label for="password" class="form-label mb-0 mt-2">Password</label>
+      <input type="password" class="form-control rounded lh-sm" id="password" placeholder="Enter Password"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
     </div>
 
-    <div class="col-6 float-end">
-      <label class="form-label fs-5 d-flex-md ps-4  mb-0 mt-2">Re-enter Password:</label>
-      <input type="password" placeholder="Confirm Password" class=" float-end lh-sm col-11 rounded " minlength="8"
-        required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+    <div class="col-md-6">
+      <label for="PasswordAgain" class="form-label mb-0 mt-2">Password</label>
+      <input type="password" class="form-control rounded lh-sm" id="PasswordAgain" placeholder="Confirm Password"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
     </div>
 
     <p class="float-start mt-2">*Enter at least one number and one Uppercase and Lowercase letter</p>
-    <button class="btn btn-primary col-12 fs-5 rounded">Sign Up</button>
+    <button class="form-control btn btn-primary col-12 fs-5 lh-sm rounded">Sign Up</button>
     <div class="text-center mt-2 ">
       <p>Already a member <a href="../login/login.component.html" target="_blank">Login</a></p>
     </div>

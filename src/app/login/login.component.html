@@ -1,13 +1,17 @@
- <div class="container col-5 ">
+ <div class="container col-8 ">
    <h1 class="text-center mt-5">Login Form</h1>
    <br>
    <form action="" class="container bg-info bg-gradient px-4 py-4 rounded">
 
-     <label class="form-label fs-4 mb-0">Username</label>
-     <input type="text" placeholder="Username" class="form-control lh-sm rounded" required>
-     <label class="form-label fs-4 mb-0 mt-2"> Password*</label>
-     <input type="password" placeholder="Password" class="form-control lh-sm rounded mb-2" minlength="8" required
-       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+     <div class="col-md-12">
+       <label for="username" class="form-label mb-0 mt-2"> Username</label>
+       <input type="text" class="form-control rounded lh-sm" id="firstname" placeholder="First Name" required>
+     </div>
+     <div class="col-md-12">
+       <label for="password" class="form-label mb-0 mt-2">Password</label>
+       <input type="password" class="form-control rounded lh-sm" id="password" placeholder="Enter Password"
+         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+     </div>
      *Please use at least one number, and one uppercase and lowercase letter:
      <div class="form-check mt-2">
        <input type="checkbox" value="" class="form-check-input" id="flexcheckdefault">
@@ -15,7 +19,8 @@
        <!-- <input type="button" value="Cancel" class="btn btn-primary mx-2"> -->
        <a href="https://www.google.com" target="_blank" class="float-end">Forget Password ?</a>
      </div>
-     <button class="btn btn-primary col-12 fs-5 mb-2 rounded" (click)="myclick()">Login</button><br>
+     <button class="form-control btn btn-primary col-12 fs-5 rounded lh-sm">Login</button>
+     <!-- <button class="btn btn-primary col-12 fs-5 mb-2 rounded" (click)="myclick()">Login</button><br> -->
 
      <div class="text-center">
        <p>Not a member? <a href="../sign-up/sign-up.component.html">Register</a></p>
